@@ -4,23 +4,23 @@
 
 ```mermaid
 graph LR;
-  Order --- Shipment;
-  Order --- Payment;
-  Order -- bill_address --- Address;
-  Order -- ship_address --- Address;
-  Order --> OrderItem;
-  OrderItem --> Stock;
-  Product --> Stock;
-  Product --> Category;
-  Category --> Product;
-  Product --> Image;
-  User -- bill_address --- Address;
-  User -- ship_address --- Address;
-  User --> Order;
-  ShipmentMethod --> Shipment;
-  PaymentMethod --> Payment;
-  Store;
-  Tracker;
-  Theme;
-  Page;
+    Order --- Shipment;
+    Order --- Payment;
+    Order -- bill_address --- Address;
+    Order -- ship_address --- Address;
+    Order --> OrderItem;
+    OrderItem --> Stock;
+    Product --> Stock;
+    Product --> Category;
+    Category --> Product;
+    Product --> Image;
+    User -- bill_address --- Address;
+    User -- ship_address --- Address;
+    User --> Order;
+    ShipmentMethod --> Shipment;
+    PaymentMethod --> Payment;
+    Store;
+    Tracker;
+    Theme;
+    Page;
 ```

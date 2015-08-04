@@ -6,15 +6,15 @@ Comable では注文情報に [state_mashine](https://github.com/pluginaweek/sta
 
 ```mermaid
 graph LR;
-  car --> orderer;
-  orderer --> delivery;
-  delivery --> shipment;
-  shipment --> payment;
-  payment --> confirm;
-  confirm --> completed;
-  completed --> canceled;
-  completed --> returned;
-  canceled --> resumed;
-  resumed --> canceled;
-  resumed --> returned;
+    car --> orderer;
+    orderer --> delivery;
+    delivery --> shipment;
+    shipment --> payment;
+    payment --> confirm;
+    confirm --> completed;
+    completed --> canceled;
+    completed --> returned;
+    canceled --> resumed;
+    resumed --> canceled;
+    resumed --> returned;
 ```
