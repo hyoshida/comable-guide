@@ -25,7 +25,7 @@ graph TD;
     payment[payment<br/>決済選択];
     confirm[confirm<br/>注文確認];
     completed[completed<br/>注文完了];
-    resumed[completed<br/>再開];
-    canceled[completed<br/>キャンセル];
-    returned[completed<br/>返品済み];
+    resumed[resumed<br/>再開];
+    canceled[canceled<br/>キャンセル];
+    returned[returned<br/>返品済み];
 ```
