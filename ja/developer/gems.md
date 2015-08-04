@@ -4,6 +4,8 @@ Comable は複数のライブラリ (gem) で構成されています。これ�
 
 以下に各種 gem を紹介します。
 
+<!---
+#+ORGTBL: SEND gems orgtbl-to-gfm
 | gem              | ディレクトリ | 説明                                               |
 |------------------+--------------+----------------------------------------------------|
 | comable          | -            | これ以下のすべての gem を読み込むための gem です。 |
@@ -11,3 +13,14 @@ Comable は複数のライブラリ (gem) で構成されています。これ�
 | comable-frontend | frontend     | フロント画面のビューやコントローラを扱います。     |
 | comable-backend  | backend      | 管理画面のビューやコントローラを扱います。         |
 | comable-sample   | sample       | サンプルデータの作成機能を提供します。             |
+-->
+
+<!--- BEGIN RECEIVE ORGTBL gems -->
+| gem | ディレクトリ | 説明 |
+|---|---|---|
+| comable | - | これ以下のすべての gem を読み込むための gem です。 |
+| comable-core | core | コア機能となるモデルやヘルパーを扱います。 |
+| comable-frontend | frontend | フロント画面のビューやコントローラを扱います。 |
+| comable-backend | backend | 管理画面のビューやコントローラを扱います。 |
+| comable-sample | sample | サンプルデータの作成機能を提供します。 |
+<!--- END RECEIVE ORGTBL gems -->
