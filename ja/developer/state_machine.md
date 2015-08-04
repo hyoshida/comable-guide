@@ -5,8 +5,8 @@ Comable では注文情報に [state_mashine](https://github.com/pluginaweek/sta
 注文のステートは次のように遷移します。
 
 ```mermaid
-graph LR;
-    car --> orderer;
+graph TD;
+    cart --> orderer;
     orderer --> delivery;
     delivery --> shipment;
     shipment --> payment;
@@ -17,4 +17,15 @@ graph LR;
     canceled --> resumed;
     resumed --> canceled;
     resumed --> returned;
+
+    cart[cart<br/>ショッピングカート];
+    orderer[orderer<br/>請求先入力];
+    delivery[delivery<br/>配送先入力];
+    shipment[shipment<br/>配送選択];
+    payment[payment<br/>決済選択];
+    confirm[confirm<br/>注文確認];
+    completed[completed<br/>注文完了];
+    resumed[completed<br/>再開];
+    canceled[completed<br/>キャンセル];
+    returned[completed<br/>返品済み];
 ```
