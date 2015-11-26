@@ -6,6 +6,7 @@
 
 - `order_id`: `Order` に関連付く ID です。
 - `shipment_method_id`: `ShipmentMethod` に関連付く ID です。
+- `stock_location_id`: `StockLocation` に関連付く ID です。配送元の倉庫を示します。
 - `fee`: 手数料です。
 - `tracking_number`: トラッキング番号です。
 - `state`: 配送ステータスです。詳細は [ステートマシン](../state_machine.md) をご覧ください。
