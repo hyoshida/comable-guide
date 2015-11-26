@@ -1,5 +1,6 @@
 * [はじめに](README.md)
 * [開発者向け](developer/README.md)
+  * [システム要件](developer/system_requirements.md)
   * [インストール](developer/installation.md)
   * [ライブラリ構成](developer/gems.md)
   * [モデル](developer/models.md)
