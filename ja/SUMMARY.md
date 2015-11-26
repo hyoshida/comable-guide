@@ -26,5 +26,8 @@
     * [User](developer/models/user.md)
     * [Variant](developer/models/variant.md)
   * [ステートマシン](developer/state_machine.md)
+  * [ダミーアプリケーション](developer/dummy_application.md)
+  * [テスト](developer/test.md)
+  * [リリース](developer/release.md)
   * [カスタマイズ](developer/customization.md)
 * [ユーザー向け](user/README.md)
