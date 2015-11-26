@@ -6,7 +6,7 @@ Comable では注文情報に [state_mashine](https://github.com/pluginaweek/sta
 
 注文のステートは次のように遷移します。
 
-{% mermaid %}
+```mermaid
 graph TD;
     cart --> orderer;
     orderer --> delivery;
@@ -30,13 +30,13 @@ graph TD;
     resumed[resumed<br/>再開];
     canceled[canceled<br/>キャンセル];
     returned[returned<br/>返品済み];
-{% endmermaid %}
+```
 
 ## 下書き注文
 
 注文のステートは次のように遷移します。注文完了後の遷移は通常の注文と同じです。
 
-{% mermaid %}
+```mermaid
 graph TD;
     draft --> shipment;
     shipment --> completed;
@@ -44,13 +44,13 @@ graph TD;
     draft[draft<br/>下書き];
     shipment[shipment<br/>配送選択];
     completed[completed<br/>注文完了];
-{% endmermaid %}
+```
 
 ## 配送
 
 配送のステートは次のように遷移します。
 
-{% mermaid %}
+```mermaid
 graph TD;
     pending --> ready;
     ready --> completed;
@@ -63,13 +63,13 @@ graph TD;
     completed[completed<br/>発送完了];
     resumed[resumed<br/>再開];
     canceled[canceled<br/>キャンセル];
-{% endmermaid %}
+```
 
 ## 決済
 
 決済のステートは次のように遷移します。
 
-{% mermaid %}
+```mermaid
 graph TD;
     pending --> ready;
     ready --> completed;
@@ -82,4 +82,4 @@ graph TD;
     completed[completed<br/>決済完了];
     resumed[resumed<br/>再開];
     canceled[canceled<br/>キャンセル];
-{% endmermaid %}
+```
