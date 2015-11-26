@@ -26,3 +26,9 @@
 - `current_shipment_fee`, `shipment_fee`: 送料です。
 - `current_payment_fee`, `payment_fee`: 決済手数料です。
 - `current_total_price`, `total_price`: 商品合計と各種手数料を含んだ合計価格です。
+
+## 配送
+
+注文には複数の配送情報が関連付きます。それぞれの配送は注文完了とともに配送準備完了となり、それによって倉庫の在庫が確保されます。
+
+注文を配送情報に変換する作業は `Inventory::Coordinator` が司っています。このクラスは注文情報を受け取り、内部で倉庫や在庫などを判別したのちに、適切な配送情報を提供します。
