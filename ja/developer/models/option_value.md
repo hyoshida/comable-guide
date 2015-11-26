@@ -6,4 +6,3 @@
 
 - `name`: 値の名称です。
 - `option_type_id`: `OptionType` に関連付く ID です。
-- `TODO`: ...

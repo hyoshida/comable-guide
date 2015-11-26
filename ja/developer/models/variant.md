@@ -6,4 +6,4 @@
 
 - `product_id`: `Product` に関連付く ID です。
 - `sku`: SKUコードです。
-- `TODO`: ...
+- `price`: 価格です。
