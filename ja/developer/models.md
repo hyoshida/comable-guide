@@ -2,7 +2,7 @@
 
 `comable-core` に定義されている各種モデルを図にすると次のようになります（図中の線は1:1の関連を、矢印付きの線は1:多の関連を示します）。
 
-{% mermaid %}
+```mermaid
 graph LR;
     Order --> Shipment;
     Shipment --> ShipmentItem;
@@ -31,4 +31,4 @@ graph LR;
     Tracker;
     Theme;
     Page;
-{% endmermaid %}
+```
