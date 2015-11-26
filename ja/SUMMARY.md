@@ -1,5 +1,6 @@
 * [はじめに](README.md)
 * [開発者向け](developer/README.md)
+  * [インストール](developer/installation.md)
   * [ライブラリ構成](developer/gems.md)
   * [モデル](developer/models.md)
     * [Address](developer/models/address.md)
