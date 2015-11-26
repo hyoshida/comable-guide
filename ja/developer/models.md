@@ -4,7 +4,8 @@
 
 ```mermaid
 graph LR;
-    Order --- Shipment;
+    Order --> Shipment;
+    Shipment --> ShipmentItem;
     Order --- Payment;
     Order -- bill_address --- Address;
     Order -- ship_address --- Address;
@@ -15,6 +16,8 @@ graph LR;
     Variant --> OptionValue;
     OptionValue --> Variant;
     OptionType --> OptionValue;
+    Stock --> ShipmentItem;
+    StockLocation --> Stock;
     Product --> Category;
     Category --> Product;
     Product --> Image;
@@ -23,6 +26,7 @@ graph LR;
     User --> Order;
     ShipmentMethod --> Shipment;
     PaymentMethod --> Payment;
+    Navigation --> NagigationItem;
     Store;
     Tracker;
     Theme;
